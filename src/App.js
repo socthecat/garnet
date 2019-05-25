@@ -18,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>мама прости сына вора</p>
       </header>
     </div>
   );
