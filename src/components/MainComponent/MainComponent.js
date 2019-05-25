@@ -23,13 +23,11 @@ export default class MainComponent extends Component {
     }
 
     render() {
-        const {value} = this.state
         return (
             <div>
 
                 <h1> mojete najat ta knopku ?</h1>
                 <button onClick={() => {this.togglePopup()}}> Click </button>
-                <h1>{value}</h1>
                 {this.state.showPopup ?
                     <Popup
 

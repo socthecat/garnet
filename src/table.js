@@ -8,9 +8,8 @@ export default class Table extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
+        console.log('come', this.props)
     }
-
     render() {
         const { data } = this.props
         return (
@@ -19,7 +18,6 @@ export default class Table extends Component {
                     <tbody>
                     {
                         data && data.map((item, index) => {
-                            console.log(item);
                             return (
                                 <tr key={index}>
                                     {
