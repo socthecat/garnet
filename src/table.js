@@ -3,31 +3,40 @@ import ReactDom from "react-dom";
 
 
 export default class Table extends Component {
+    constructor(props) {
+        super(props)
+    }
 
+    componentDidMount() {
+        console.log(this.props)
+    }
 
     render() {
+        const { data } = this.props
         return (
             <div>
-                <input
-                    type="text"
-                    value="Hello!"/>
-
                 <table>
+                    <tbody>
                     {
-                        [  {d: '№', s:'Ustroystvo', a:'Model', aa:'IMEI', aaa: 'Client', aaaa:'Status'} ,{a: 'dad', z: 'dsd', x: 'dsd', c: 'dsd', v: 'dsd', b: 'dsd'},
-                        ].map((tovR) => {
-                            return (<tr>
-                                {
-                                    Object.keys(tovR).map((key) => {
-                                        return (
-                                            <td>{tovR[key]}</td>
-                                        )
-                                    })
-                                }
-                            </tr>)
+                        data && data.map((item, index) => {
+                            console.log(item);
+                            return (
+                                <tr key={index}>
+                                    {
+                                        Object.keys(item).map((key, index) => {
+                                            return (
+                                                <td key={index}>{item[key]}</td>
+                                            )
+                                        })
+                                    }
+                                </tr>)
                         })
-                    })
 
+                        // this.props.data.map((tovR, index) => {
+
+                        // })
+                    }
+                    </tbody>
                 </table>
             </div>
         )

@@ -1,10 +1,43 @@
 import React, {Component} from 'react';
-import ItemInputPopup from '../ItemInputPopup/ItemInputPopup'
+import Popup from '../popup/popup'
+import table from '../../table'
+
 export default class MainComponent extends Component {
+    constructor(props){
+        super(props);
+        this.state = { showPopup: false, value: 'tut budet text' };
+        this.togglePopup = this.togglePopup.bind(this)
+    }
+
+    togglePopup(value) {
+        console.log('sadasdasdsa', value)
+
+        this.setState({
+            showPopup: !this.state.showPopup,
+            value
+        });
+        if (value) {
+            this.props.func(value)
+        }
+
+    }
+
     render() {
+        const {value} = this.state
         return (
             <div>
-                <ItemInputPopup/>
+
+                <h1> mojete najat ta knopku ?</h1>
+                <button onClick={() => {this.togglePopup()}}> Click </button>
+                <h1>{value}</h1>
+                {this.state.showPopup ?
+                    <Popup
+
+                        closePopup={this.togglePopup}
+                    />
+
+                    : null
+                }
 
             </div>
 
