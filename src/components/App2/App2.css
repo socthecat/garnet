@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap&subset=cyrillic');
+* {
+    margin: 0;
+    padding: 0;
+}
+.app-wrapper {
+    display:flex;
+}
+li {
+    list-style-type: none;
+}
+.nav-list {
+    padding: 15px 50px;
+    background-color: red;
+    box-shadow: 0 0 50px grey;
+    width: 1200px;
+    height: 1200px;
+    transform: rotate(30deg);
+    position: fixed;
+    top: -420px;
+    left: -1450px;
+    transition: all .5s;
+}
+.nav-list li {
+    font-size: 150%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 0;
+    position: relative;
+}
+.nav-list div {
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index:1000;
+    left: 1150px;
+    top: 150px;
+}
+.nav-list:hover {
+    left: -1000px;
+}
+
+.app-wrapper:nth-child(2) {
+    padding-left: 100px;
+}
+
+.nav-list li:nth-of-type(1){
+    left: 100px;
+}
+.nav-list li:nth-of-type(2){
+    left: 70px;
+}
+.nav-list li:nth-of-type(3){
+    left: -10px;
+}
+.nav-list li:nth-of-type(4){
+    left: -25px;
+}

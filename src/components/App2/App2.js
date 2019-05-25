@@ -3,6 +3,7 @@ import Admission from '../Admission/Admission';
 import Links from '../Links/Links';
 import Orders from '../Orders/Orders';
 import Warranty from '../Warranty/Warranty';
+import './App2.css';
 class App2 extends Component {
     constructor() {
         super();
@@ -23,13 +24,15 @@ class App2 extends Component {
     render() {
         if (this.state.menuItem === 0) {
             return(
-                <div>
+                <div className="app-wrapper">
                     <header>
-                        <ul>
+                        <ul className="nav-list">
+                            <div>
                             <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
                             <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
                             <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
                             <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            </div>
                         </ul>
                     </header>
                     <Links />
@@ -38,13 +41,15 @@ class App2 extends Component {
         }
         if (this.state.menuItem === 2) {
             return(
-                <div>
+                <div className="app-wrapper">
                     <header>
-                        <ul>
+                        <ul className="nav-list">
+                            <div>
                             <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
                             <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
                             <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
                             <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            </div>
                         </ul>
                     </header>
                     <Orders />
@@ -53,13 +58,15 @@ class App2 extends Component {
         }
         if (this.state.menuItem === 3) {
             return(
-                <div>
+                <div className="app-wrapper">
                     <header>
-                        <ul>
+                        <ul className="nav-list">
+                            <div>
                             <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
                             <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
                             <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
                             <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            </div>
                         </ul>
                     </header>
                     <Warranty />
@@ -68,13 +75,15 @@ class App2 extends Component {
         }
         if (this.state.menuItem === 4) {
             return(
-                <div>
+                <div className="app-wrapper">
                     <header>
-                        <ul>
+                        <ul className="nav-list">
+                            <div>
                             <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
                             <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
                             <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
                             <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            </div>
                         </ul>
                     </header>
                     <Admission />
