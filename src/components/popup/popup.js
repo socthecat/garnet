@@ -11,8 +11,7 @@ export default class Popup extends Component {
                 model: '',
                 imei: '',
                 client: '',
-                status: '',
-                name: ''
+                status: ''
             },
 
         }

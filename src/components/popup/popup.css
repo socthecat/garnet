@@ -12,7 +12,7 @@
     height: 1200px;
     transform: rotate(-30deg);
     top:47vh;
-    right: -50vh;
+    right: -55vh;
 }
 
 .popup_inner {
@@ -33,7 +33,7 @@
     }
     100% {
         top:47vh;
-        right: -50vh;
+        right: -55vh;
     }
     }
 

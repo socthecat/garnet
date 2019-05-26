@@ -1,9 +1,12 @@
 .zakazi {
     margin: 0 auto;
     width: 70vw;
-    background-color: white;
-    padding: 10px 20px;
     margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #96002a;
+    background-color: #ffccda;
+    box-shadow: 0 0 10px #ffbfd0;
 }
 .table-component {
     width: calc(100vw - 100px);
@@ -12,4 +15,7 @@
     position: relative;
     right: -250px;
     top: 50px;
+}
+.zakazi tr:first-of-type {
+    font-weight: bold;
 }

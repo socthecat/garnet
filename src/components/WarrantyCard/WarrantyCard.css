@@ -90,3 +90,12 @@ td {
     border-bottom: 3px dashed black;
     margin-bottom: 50px;
 }
+.WarrantyCard {
+margin: 0 auto;
+    background-color: white;
+    padding: 0 30px;
+    box-shadow: 0 0 20px white;
+}
+.small_list li {
+    list-style-type: disc;
+}

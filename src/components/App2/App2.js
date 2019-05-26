@@ -7,7 +7,7 @@ import './App2.css';
 class App2 extends Component {
     constructor() {
         super();
-        this.state = {menuItem: 0}
+        this.state = {menuItem: 2}
     }
     setMenuItem1 () {
         this.setState({menuItem: 0});
@@ -28,10 +28,10 @@ class App2 extends Component {
                     <header>
                         <ul className="nav-list">
                             <div>
-                            <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
-                            <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
-                            <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
-                            <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            <li onClick={this.setMenuItem1.bind(this)}>Links</li>
+                            <li onClick={this.setMenuItem2.bind(this)}>Orders</li>
+                            <li onClick={this.setMenuItem3.bind(this)}>Warranty Cards</li>
+                            <li onClick={this.setMenuItem4.bind(this)}>Admission Act</li>
                             </div>
                         </ul>
                     </header>
@@ -45,10 +45,10 @@ class App2 extends Component {
                     <header>
                         <ul className="nav-list">
                             <div>
-                            <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
-                            <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
-                            <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
-                            <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            <li onClick={this.setMenuItem1.bind(this)}>Links</li>
+                            <li onClick={this.setMenuItem2.bind(this)}>Orders</li>
+                            <li onClick={this.setMenuItem3.bind(this)}>Warranty Cards</li>
+                            <li onClick={this.setMenuItem4.bind(this)}>Admission Act</li>
                             </div>
                         </ul>
                     </header>
@@ -62,10 +62,10 @@ class App2 extends Component {
                     <header>
                         <ul className="nav-list">
                             <div>
-                            <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
-                            <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
-                            <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
-                            <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            <li onClick={this.setMenuItem1.bind(this)}>Links</li>
+                            <li onClick={this.setMenuItem2.bind(this)}>Orders</li>
+                            <li onClick={this.setMenuItem3.bind(this)}>Warranty Cards</li>
+                            <li onClick={this.setMenuItem4.bind(this)}>Admission Act</li>
                             </div>
                         </ul>
                     </header>
@@ -79,10 +79,10 @@ class App2 extends Component {
                     <header>
                         <ul className="nav-list">
                             <div>
-                            <li onClick={this.setMenuItem1.bind(this)}>Ssilki</li>
-                            <li onClick={this.setMenuItem2.bind(this)}>Zakazi</li>
-                            <li onClick={this.setMenuItem3.bind(this)}>Talon na edu</li>
-                            <li onClick={this.setMenuItem4.bind(this)}>Akt pizdeca</li>
+                            <li onClick={this.setMenuItem1.bind(this)}>Links</li>
+                            <li onClick={this.setMenuItem2.bind(this)}>Orders</li>
+                            <li onClick={this.setMenuItem3.bind(this)}>Warranty Cards</li>
+                            <li onClick={this.setMenuItem4.bind(this)}>Admission Act</li>
                             </div>
                         </ul>
                     </header>

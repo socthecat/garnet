@@ -59,10 +59,10 @@ li {
     left: 70px;
 }
 .nav-list li:nth-of-type(3){
-    left: -10px;
+    left: 35px;
 }
 .nav-list li:nth-of-type(4){
-    left: -25px;
+    left: -20px;
 }
 @keyframes polygonss {
     0% {

@@ -5,8 +5,7 @@ import logo from './logo.png';
 class WarrantyCard extends Component {
     render() {
         return (
-            <div>
-
+            <div className="WarrantyCard">
                 <header>
                     <div className="tools">
                         <div className="block"><img src={logo} className='logotype'/></div>
