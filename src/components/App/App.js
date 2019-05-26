@@ -12,13 +12,14 @@ class App extends Component {
     showLayout(){
         this.setState({login:false});
     }
-
     render() {
         if (this.state.login){
             return (
-                <div>
-                    <h1>Super krutoj sait</h1>
-                    <button onClick={this.showLayout.bind(this)}>lezhat</button>
+                <div className="greeting" id="greeting">
+                    <div className="greeting-inner">
+                    <h1>Garnet.</h1>
+                    <button onClick={this.showLayout.bind(this)} id="importantButton">Log in</button>
+                    </div>
                 </div>
             );
         }

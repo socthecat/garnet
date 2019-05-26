@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Popup from '../popup/popup'
-import table from '../../table'
+import '../../table.css';
 
 export default class MainComponent extends Component {
     constructor(props){
@@ -25,9 +25,7 @@ export default class MainComponent extends Component {
     render() {
         return (
             <div>
-
-                <h1> mojete najat ta knopku ?</h1>
-                <button onClick={() => {this.togglePopup()}}> Click </button>
+                <button className="data-button" onClick={() => {this.togglePopup()}}> Add data </button>
                 {this.state.showPopup ?
                     <Popup
 

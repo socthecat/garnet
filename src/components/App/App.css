@@ -1,21 +1,77 @@
-.popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba(0,0,0, 0.5);
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap&subset=cyrillic');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.popup\_inner {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
-  margin: auto;
-  border-radius: 20px;
-  background: white;
+body,html {
+  margin: 0;
+  padding: 0;
+}
+.greeting {
+  width: 100%;
+  height:100vh;
+  background-image: url('../../img/background.png'), linear-gradient(to top,#ff87af, #ff7a9f);
+  background-repeat: repeat-x;
+  background-size:500px;
+  animation: polygons 100s ease-out;
+  background-position: -100vw bottom;
+  transition: all 1s;
+}
+.greeting-inner {
+  margin: 0 auto;
+  width: 50vh;
+  padding-top: calc(50vh - 100px);
+  animation: bigger 7s ease-out;
+}
+.greeting-inner h1 {
+ text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  color: #ef0949;
+}
+.greeting-inner button {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  clip-path: polygon(0% 39%, 11% 0%, 41% 12%, 71% 0%, 92% 18%, 100% 22%, 99% 51%, 100% 80%, 88% 100%, 64% 92%, 37% 100%, 18% 92%, 0% 100%, 2% 66%);
+  border: 0;
+  background: #ffd6eb url('../../img/background.png');
+  font-family: 'Roboto', sans-serif;
+  background-size: 200px;
+  color: #cc0a6d;
+  opacity: 1;
+  cursor: pointer;
+
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  clip-path: polygon(0% 39%, 11% 0%, 41% 12%, 71% 0%, 92% 18%, 100% 22%, 99% 51%, 100% 80%, 88% 100%, 64% 92%, 37% 100%, 18% 92%, 0% 100%, 2% 66%);
+  border: 0;
+  background: #f41d8b url('../../img/background.png');
+  font-family: 'Roboto', sans-serif;
+  background-size: 200px;
+  color: #cc0a6d;
+  opacity: 1;
+  cursor: pointer;
+}
+@keyframes polygons {
+  0% {
+    background-position: bottom center;
+  }
+  100% {
+    background-position: -100vw bottom;
+  }
+}
+@keyframes bigger {
+  0% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

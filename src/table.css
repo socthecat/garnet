@@ -1,0 +1,15 @@
+.zakazi {
+    margin: 0 auto;
+    width: 70vw;
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.table-component {
+    width: calc(100vw - 100px);
+}
+.data-button {
+    position: relative;
+    right: -250px;
+    top: 50px;
+}

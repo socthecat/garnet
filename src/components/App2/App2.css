@@ -2,6 +2,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
+}
+body {
+    background-color: #ffd8ec;
 }
 .app-wrapper {
     display:flex;
@@ -11,15 +15,20 @@ li {
 }
 .nav-list {
     padding: 15px 50px;
-    background-color: red;
-    box-shadow: 0 0 50px grey;
+    background-color: #ef0949;
+    background-image: url('../../img/background.png');
+    background-repeat: repeat;
+    animation: polygonss 10s linear infinite;
+    background-position: -100vw top;
+    transition: all .5s;
+    box-shadow: 0 0 50px #ff7a9f;
     width: 1200px;
     height: 1200px;
     transform: rotate(30deg);
     position: fixed;
     top: -420px;
     left: -1450px;
-    transition: all .5s;
+    z-index: 100;
 }
 .nav-list li {
     font-size: 150%;
@@ -54,4 +63,12 @@ li {
 }
 .nav-list li:nth-of-type(4){
     left: -25px;
+}
+@keyframes polygonss {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: -100vw top;
+    }
 }

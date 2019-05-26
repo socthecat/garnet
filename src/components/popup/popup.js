@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../App.css';
+import './popup.css';
 
 export default class Popup extends Component {
     constructor(props) {
@@ -51,22 +51,22 @@ export default class Popup extends Component {
     render() {
         return (
             <div className='popup'>
-                <div className='popup\_inner'>
-                    <h1>vvedite dannye plz</h1>
-                    <label>#</label>
-                    <input type="text" onChange={this.changeNum}/>
-                    <label>Device</label>
-                    <input type="text" onChange={this.changeDevice}/>
-                    <label>Model</label>
-                    <input type="text" onChange={this.changeModel}/>
-                    <label>IMEI</label>
-                    <input type="text" onChange={this.changeImei}/>
-                    <label>Client</label>
-                    <input type="text" onChange={this.changeClient}/>
-                    <label>Status</label>
-                    <input type="radio" value="active" onChange={this.changeStatus}/> Active<br/>
-                    <input type="radio" value="done" onChange={this.changeStatus}/> Done<br/>
-                    <input type="radio" value="canceled" onChange={this.changeStatus}/> Canceled<br/>
+                <div className='popup_inner'>
+                    <div><label>#</label>
+                        <input type="text" onChange={this.changeNum}/></div>
+                    <div><label>Device</label>
+                        <input type="text" onChange={this.changeDevice}/></div>
+                    <div><label>Model</label>
+                    <input type="text" onChange={this.changeModel}/></div>
+                        <div><label>IMEI</label>
+                    <input type="text" onChange={this.changeImei}/></div>
+                            <div><label>Client</label>
+                    <input type="text" onChange={this.changeClient}/></div>
+                                <div><label className="status">Status</label>
+                                    <div className="inline">
+                    <input type="radio" name="status" value="active" onChange={this.changeStatus}/> Active<br/>
+                    <input type="radio" name="status" value="done" onChange={this.changeStatus}/> Done<br/>
+                                        <input type="radio" name="status" value="canceled" onChange={this.changeStatus}/> Canceled<br/></div></div>
                     <button onClick={() => {
                         console.log(this.props)
                      this.props.closePopup(this.state.dara)

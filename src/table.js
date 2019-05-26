@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import ReactDom from "react-dom";
-
+import "./table.css";
 
 export default class Table extends Component {
     constructor(props) {
@@ -13,8 +13,8 @@ export default class Table extends Component {
     render() {
         const { data } = this.props
         return (
-            <div>
-                <table>
+            <div className="table-component">
+                <table className="zakazi">
                     <tbody>
                     {
                         data && data.map((item, index) => {

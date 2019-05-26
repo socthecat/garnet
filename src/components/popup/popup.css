@@ -1,0 +1,62 @@
+.popup {
+    position: fixed;
+    margin: auto;
+    padding: 15px 50px;
+    background-color: #f0a5ff;
+    background-image: url('../../img/background.png');
+    background-repeat: repeat;
+    animation: polygonss 10s linear infinite, roflanpopup .1s linear;
+    background-position: -100vw top;
+    box-shadow: 0 0 50px #e87aff;
+    width: 1200px;
+    height: 1200px;
+    transform: rotate(-30deg);
+    top:47vh;
+    right: -50vh;
+}
+
+.popup_inner {
+    position: absolute;
+    transform: rotate(30deg);
+    bottom: 850px;
+    right: 220px;
+    margin: auto;
+    width: 250px;
+}
+.popup_inner div {
+    padding: 5px 0;
+}
+@keyframes roflanpopup {
+    0% {
+        top: 47vh;
+        right: -90vw;
+    }
+    100% {
+        top:47vh;
+        right: -50vh;
+    }
+    }
+
+input {
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color: #ef0949;
+    transition: border-bottom-color 1s;
+    position: absolute;
+    right: 0;
+}
+textarea:focus, input:focus {
+    outline: none;
+    border-color: transparent;
+    border-bottom-color: #ef09d4;
+}
+label{
+    font-family: 'Roboto', sans-serif;
+}
+.inline {
+    display: inline-block;
+    margin-left: 50px;
+}
+.status {
+vertical-align: top;
+}
